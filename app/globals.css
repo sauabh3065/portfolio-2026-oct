@@ -34,6 +34,7 @@ button {
   color: inherit;
   cursor: pointer;
 }
+
 button,
 a {
   -webkit-tap-highlight-color: transparent;
