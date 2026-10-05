@@ -18,7 +18,7 @@ import {
   Cloud,
   ShieldCheck,
 } from "lucide-react";
-import Room from "./room";
+import DragonBattle from "./room";
 const projects = [
   {
     number: "01",
@@ -241,12 +241,12 @@ export default function Home() {
           </div>
           <div className="hero-visual">
             <div className="scene-top">
-              <span className="mono">MY DIGITAL WORKSPACE</span>
+              <span className="mono">A CLASH OF ELEMENTS</span>
               <span className="scene-number">01 / 01</span>
             </div>
-            <Room />
+            <DragonBattle />
             <div className="scene-bottom">
-              <span>A LITTLE CODE. A LOT OF POSSIBILITY.</span>
+              <span>EMBER / FROST · AN ETERNAL RIVALRY</span>
               <span className="drag-label">DRAG TO EXPLORE</span>
             </div>
           </div>

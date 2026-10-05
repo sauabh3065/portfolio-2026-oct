@@ -14,7 +14,8 @@
     "db:generate": "drizzle-kit generate",
     "dev:standalone": "vite --config vite.standalone.config.ts",
     "build:standalone": "vite build --config vite.standalone.config.ts",
-    "preview:standalone": "vite preview --config vite.standalone.config.ts"
+    "preview:standalone": "vite preview --config vite.standalone.config.ts",
+    "test:dragons": "node tests/run-dragons.mjs"
   },
   "dependencies": {
     "@base-ui/react": "^1.7.0",

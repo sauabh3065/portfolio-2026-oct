@@ -1183,3 +1183,48 @@ h2 > span {
     transition: none !important;
   }
 }
+
+/* The 3D arena never extends over the portfolio's links or scrolling surface. */
+.dragon-canvas { overflow: hidden; }
+.battle-controls {
+  position: absolute;
+  inset: auto 24px 28px 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  pointer-events: none;
+}
+.battle-controls p { margin: 0; color: #aab3c2; font: 11px monospace; }
+.battle-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  min-width: 110px;
+  min-height: 44px;
+  padding: 11px 20px;
+  background: var(--accent, #c4f27b);
+  color: #17210d;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  font-family: inherit;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  pointer-events: auto;
+}
+.battle-button:hover { background: #dafca8; }
+.battle-button:focus-visible { outline: 2px solid #e7ffc8; outline-offset: 4px; }
+.dragon-canvas .scene-status { gap: 18px; }
+@media (max-width: 600px) {
+  .battle-controls { bottom: 30px; left: 10px; right: 10px; gap: 12px; }
+  .battle-controls p { font-size: 10px; }
+}
+
+.dragon-canvas[data-battle-state="finished"] .battle-controls p {
+  color: #d2f998;
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 600;
+}
